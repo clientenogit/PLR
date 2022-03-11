@@ -48,10 +48,18 @@
 
             <!-- Alterar o vídeo -->
             <script>
-              setTimeout(newVID, 1000);
+
+              function timedRefresh(timeoutPeriod) {
+                setTimeout("location.reload(true);",timeoutPeriod);
+              }
+
+              window.onload = timedRefresh(1500);
+
               function newVID(){
                 document.querySelector('#smartplayer > div.smartplayer-video-wrap > video').src='https://brandinup.me/wp-content/uploads/2022/03/24kGoldn-Company-Official-Audio-ft.-Future.mp4'
               }
+
+           
             </script>
             
             <!-- Botão -->
